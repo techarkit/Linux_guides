@@ -1,4 +1,4 @@
-# Linux For Beginners Who are willing to Learn Linux from Scratch.
+# Linux For Beginners
 
 A Red Hat Certified System Administrator (RHCSA) is able to perform the following tasks
 
