@@ -1,6 +1,6 @@
 # Linux For Beginners
 
-A Red Hat Certified System Administrator (RHCSA) is able to perform the following tasks
+A Red Hat Certified System Administrator (RHCSA) is able to perform the following tasks  :simple_smile:
 
 * Understand and use essential tools for handling files, directories, command-line environments, and documentation
 
