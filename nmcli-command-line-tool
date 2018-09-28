@@ -1,0 +1,66 @@
+nmcli is a command-line tool for controlling NetworkManager and reporting network status. It can be utilized as a replacement for nm-applet or other graphical clients.  nmcli is used to create, display, edit, delete, activate, and deactivate network connections, as well as control and display network device status.
+
+nmcli general status
+nmcli general logging
+
+nmcli device status #To Know Device Status
+
+nmcli connection show #To See the connection status
+nmcli connection show -a #Display Only Active Connections
+nmcli connection show connection_Name #See Only particular conenction status
+nmcli c s
+
+nmcli connection down connection_Name #To Bring Down Connection
+nmcli conenction up connection_Name #To Bring Up Particular connection profile
+
+nmcli device status #To see device status
+nmcli device disconnect device_name #To disconnect device
+nmcli device connect device_name #Connect the device
+
+##Add New Connection Profile
+nmcli conenction add type Connection_type con-name connection_name ifname interface_name
+nmcli connection modify 10series ipv4.addresses 10.10.90.2 ipv4.gateway 
+nmcli connection modify 10series ipv4.addresses 10.10.90.2 ipv4.gateway 10.10.90.1 ipv4.dns 4.4.4.4 +ipv4.dns 8.8.8.8
+nmcli conenction modify connection_name ipv4.addresses "192.168.2.4/24 192.168.2.2"
+nmcli connection modify 10series connection.autoconnect yes
+
+
+nmcli -t -f RUNNING general
+nmcli -t -f STATE general
+nmcli -p -m multiline -f all con show
+nmcli -f name,autoconnect c s
+
+nmcli -p connection show eth0
+nmcli connection show --show-secrets "WiFi"
+nmcli -f active connection show eth0
+
+ nmcli device wifi list
+ nmcli -p -f general,wifi-properties device show wlan0
+ nmcli general permissions
+ nmcli general logging
+ nmcli g log level DEBUG domains CORE,ETHER,IP
+ nmcli g log level INFO domains DEFAULT
+ nmcli con add type bond ifname mybond0 mode active-backup
+ nmcli con add type ethernet ifname eth1 master mybond0
+ nmcli con add type ethernet ifname eth2 master mybond0
+ nmcli con add type team con-name Team1 ifname Team1 config team1-master-json.conf
+ nmcli con add type ethernet con-name Team1-slave1 ifname em1 master Team1
+ nmcli con add type ethernet con-name Team1-slave2 ifname em2 master Team1
+ nmcli con up Team1-slave1
+ nmcli con up Team1-slave2
+ nmcli con add type bridge con-name TowerBridge ifname TowerBridge
+ nmcli con add type ethernet con-name br-slave-1 ifname ens3 master TowerBridge
+ nmcli con add type ethernet con-name br-slave-2 ifname ens4 master TowerBridge
+ nmcli con modify TowerBridge bridge.stp no
+ nmcli con add con-name my-con-em1 ifname em1 type ethernet \
+ nmcli con mod my-con-em1 ipv4.dns "8.8.8.8 8.8.4.4"
+ nmcli con mod my-con-em1 +ipv4.dns 1.2.3.4
+ nmcli con mod my-con-em1 ipv6.dns "2001:4860:4860::8888 2001:4860:4860::8844"
+ nmcli -p con show my-con-em1
+ nmcli -g ip4.address connection show my-con-eth0
+ nmcli -g ip4.address,ip4.dns connection show my-con-eth0
+ nmcli -g ip4 connection show my-con-eth0
+ nmcli -t -f general -e yes -m tab dev show eth0
+ nmcli radio wifi off
+ nmcli radio wifi on
+ nmcli connection edit type ethernet
