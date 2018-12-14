@@ -76,7 +76,7 @@ A Red Hat Certified System Administrator (RHCSA) is able to perform the followin
 - [lvextend Extending Logical Volume Size non-disruptively - RHCSA](https://www.youtube.com/watch?v=5e5h6xYctL0)
 - [lvreduce How to Reduce LVM Size without Loosing data](https://www.youtube.com/watch?v=qj34vtpyfVg)
 - [How to Get Help From Linux Command Line and Man Pages - RHCSA](https://www.youtube.com/watch?v=EyILeB9Drso)
-- [OpenSSH (Secure Shell) Server and Client Configuration - RHCSA](https://www.youtube.com/watch?v=4SdszyDodcU
+- [OpenSSH (Secure Shell) Server and Client Configuration - RHCSA](https://www.youtube.com/watch?v=4SdszyDodcU)
 - [Syslog Server Analyzing and Storing Logs - RHCSA](https://www.youtube.com/watch?v=KHUG3gFl0fM)
 - [Archiving and Compressing Files and Directories - tar - RHCSA](https://www.youtube.com/watch?v=XkEsIjSAwws)
 - [RPM   Red Hat Package Manager  Install/Remove/Upgrade/Query Software&#39;s](https://www.youtube.com/watch?v=7h5M48FvkZA)
