@@ -2,6 +2,16 @@
 
 A Red Hat Certified System Administrator (RHCSA) is able to perform the following tasks  :simple_smile:
 
+[Linux Beginners](https://github.com/techtutorials/Linux-For-Beginners)
+
+* [Facebook](https://www.facebook.com/Linuxarkit/)
+* [Email List](https://feedburner.google.com/fb/a/mailverify?uri=arkit)
+* [Linkedin](https://in.linkedin.com/in/ravi-kumar-94530121)
+* [Google Plus](https://plus.google.com/u/0/+RedhatEnterpriseLinuxStepbyStepGuide/posts)
+* [Twitter](https://twitter.com/aravikumar48)
+* [Youtube](https://www.youtube.com/Techarkit?sub_confirmation=1)
+* [Email Address](aravikumar48@gmail.com)
+
 * Understand and use essential tools for handling files, directories, command-line environments, and documentation
 
 * Operate running systems, including booting into different run levels, identifying processes, starting and stopping virtual machines, and controlling services
