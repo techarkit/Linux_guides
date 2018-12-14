@@ -12,19 +12,21 @@ A Red Hat Certified System Administrator (RHCSA) is able to perform the followin
 * [Youtube](https://www.youtube.com/Techarkit?sub_confirmation=1)
 * [Email Address](aravikumar48@gmail.com)
 
-* Understand and use essential tools for handling files, directories, command-line environments, and documentation
+RHCSA Objectives
 
-* Operate running systems, including booting into different run levels, identifying processes, starting and stopping virtual machines, and controlling services
+** Understand and use essential tools for handling files, directories, command-line environments, and documentation
 
-* Configure local storage using partitions and logical volumes
+** Operate running systems, including booting into different run levels, identifying processes, starting and stopping virtual machines, and controlling services
 
-* Create and configure file systems and file system attributes, such as permissions, encryption, access control lists, and network file systems
+** Configure local storage using partitions and logical volumes
 
-* Deploy, configure, and maintain systems, including software installation, update, and core services
+** Create and configure file systems and file system attributes, such as permissions, encryption, access control lists, and network file systems
 
-* Manage users and groups, including use of a centralized directory for authentication
+** Deploy, configure, and maintain systems, including software installation, update, and core services
 
-* Manage security, including basic firewall and SELinux configuration
+** Manage users and groups, including use of a centralized directory for authentication
+
+** Manage security, including basic firewall and SELinux configuration
 
 - [RHCSA Certification Course Overview](https://www.youtube.com/watch?v=BskRmjvWG5Y)
 - [Setup Linux Lab using your Desktop](https://www.youtube.com/watch?v=2DKrI3CWfbE)
