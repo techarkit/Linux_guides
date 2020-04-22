@@ -1,14 +1,26 @@
+## Tech Arkit 300+ Linux Video Tutorial ##
+* [Facebook](https://www.facebook.com/Linuxarkit/)
+* [Email List](https://feedburner.google.com/fb/a/mailverify?uri=arkit)
+* [Linkedin](https://in.linkedin.com/in/ravi-kumar-94530121)
+* [Twitter](https://twitter.com/aravikumar48)
+* [Youtube](https://www.youtube.com/Techarkit?sub_confirmation=1)
+* [Email Address](aravikumar48@gmail.com)
+* [WhatsApp Group](http://bit.ly/wappg)
+* [Linux Telegram Group](http://bit.ly/linux-telegram)
+* [Reddit TechTutorials](http://bit.ly/redditark)
+* [Tumblr](https://www.tumblr.com/blog/aravikumar48)
+
 - How to Use TechArkit Youtube for effective learning https://youtu.be/N8fXduCB7VA
-- 
-- ### Interview Questions and Answers ##
+
+ ### Interview Questions and Answers ##
 - SSH Interview questions and answers  https://youtu.be/dQTrq_5nVbs
 - 17 Linux Interview Questions and Answers   https://youtu.be/hOACNkPpIMI
 - 15 Real time Linux Interview questions and Answers https://www.youtube.com/watch?v=8lVXGlncqSk
 - Linux Basic Interview Questions and Answers https://www.youtube.com/watch?v=6JBSWgbhWiQ
 - Linux Administrator Level 2 Interview Questions and Answers https://www.youtube.com/watch?v=sdQufg-n4zE
 - Linux Interview Questions and Answers https://www.youtube.com/watch?v=c_b_08dWhFk
-- 
-- ### Nagios Monitoring Tools ###
+
+ ### Nagios Monitoring Tools ###
 - SSL Certificate monitoring https://www.youtube.com/watch?v=gUV3iiXIqJ8
 - NDOUtils Installation and Configuration Nagios https://www.youtube.com/watch?v=9jgLuxea8DQ
 - NagVis Installation for Visualization maps https://www.youtube.com/watch?v=-pmubBPbGeo
@@ -25,8 +37,8 @@
 - Nagios NRPE Installation and Monitoring Linux Server https://www.youtube.com/watch?v=laiSqMvZLdk
 - NSClient++ Installation and Monitoring windows server Nagios Core https://www.youtube.com/watch?v=0UQxihYWK3w
 - Nagios core Installation Centos 7/RHEL 7 Guide https://www.youtube.com/watch?v=ZMCfgJkIz3I
-- 
-- ### Shell Scripting Tutorial ###
+
+ ### Shell Scripting Tutorial ###
 - sequence seq command, make maths easy in scripts https://www.youtube.com/watch?v=_vQIyDFbcI8
 - CPU, Memory, Disk Utilization from Multiple servers https://www.youtube.com/watch?v=JT2lEulFlrQ
 - Unary Operator Shell Scripting Examples https://www.youtube.com/watch?v=O5BcO1w-lTQ
@@ -99,8 +111,8 @@
 - Getopts Function      https://www.youtube.com/watch?v=j-lEoC0DWI8
 - Executing Multiple scripts from single script      https://youtu.be/hs-FK681D50
 - logger logging messages to log file      https://youtu.be/_kMXvtn1RRQ
-- 
-- ### Linux Tutorial ###
+ 
+ ### Linux Tutorial ###
 - Logrotate Configuring Log rotation policies https://www.youtube.com/watch?v=--J_vAEVZHg
 - Send Emails from Linux Command Linux Pearl utility https://www.youtube.com/watch?v=eEd9EgIWFBg
 - Configuring EPEL, RPMForge Repositories https://www.youtube.com/watch?v=MBwSYZMvbFo
@@ -193,27 +205,27 @@
 - How to Setup Linux Lab at home https://www.youtube.com/watch?v=2DKrI3CWfbE
 - Introduction to Linux https://www.youtube.com/watch?v=Wv5VHr4esvs
 - Linux course Overview https://www.youtube.com/watch?v=BskRmjvWG5Y
-- 
-- 
-- ## LVM Linux Tutorial ###
+ 
+ 
+ ## LVM Linux Tutorial ###
 - Recover acidentally deleted LVM https://www.youtube.com/watch?v=y4t47-0G0U4
 - LVM snapshot backup and restore https://www.youtube.com/watch?v=tmvvtG1wmQ8
 - Migrate LVM from one Server to another Server https://www.youtube.com/watch?v=OGByi6C3KKw
 - How to Reduce LVM Step by Step Guide https://www.youtube.com/watch?v=qj34vtpyfVg
 - How to Extend LVM size https://www.youtube.com/watch?v=5e5h6xYctL0
 - How to Create New LVM in Linux https://www.youtube.com/watch?v=3mgm2Q4DIdg
-- 
-- ## Putty Software Tips and Tricks ##
+ 
+ ## Putty Software Tips and Tricks ##
 - Life Savier Putty topics https://www.youtube.com/watch?v=2F6S0_JOYx0
 - how to Open multiple putty sessions without typing password again and again https://www.youtube.com/watch?v=qIEDAeyMK2E
 - SSH to Linux Server with single Click https://www.youtube.com/watch?v=qaPGgQI2pd0
 - SSH To Linux Servers without typing credentails https://www.youtube.com/watch?v=0HOdeIO_kDY
-- 
-- ## Zabbix Monitoring Tool ###
+ 
+ ## Zabbix Monitoring Tool ###
 - Installing and Configuring Windows Agent Zabbix https://www.youtube.com/watch?v=armsJ_cY4Og
 - Zabbix Monitoring Tool Installation and Configuration https://www.youtube.com/watch?v=C9QeNGYVdMA
-- 
-- ## Ansible Tutorial ##
+ 
+ ## Ansible Tutorial ##
 - How to Create Linux Partitions using Ansible Playbook https://www.youtube.com/watch?v=BxM2zygCGOU
 - How to Allow Firewall Ports using Ansible Playbook https://www.youtube.com/watch?v=Q0wbqlrDwCk
 - Ansible Galaxy https://www.youtube.com/watch?v=34ycoo2T1HI
@@ -229,9 +241,9 @@
 - Create Manual Invnentory Ansible https://www.youtube.com/watch?v=G7_orKIWAeA
 - Ansible Lab Setup https://www.youtube.com/watch?v=p8xkv1m-boE
 - D0407 Ansible Automation course content https://www.youtube.com/watch?v=-b1ByalW4X8
-- 
-- 
-- ## Red Hat Enterprise Linux 8 - RHEL 8 ##
+ 
+ 
+ ## Red Hat Enterprise Linux 8 - RHEL 8 ##
 - New features in RHEL 8 https://www.youtube.com/watch?v=6v11vkTkgtY
 - RHCSA EX200 Complete Course single Video https://www.youtube.com/watch?v=4P23_rhyTgc
 - RHCE (Red Hat Certified Engineer) EX294 Exam Course Content https://www.youtube.com/watch?v=8rgGNIKfyfI
@@ -254,9 +266,9 @@
 - RHEL 8 New Features Explained https://www.youtube.com/watch?v=3OWAS_ZKCgQ
 - WebMin Installation and Configuration RHEL 8/Centos 8 https://www.youtube.com/watch?v=q24P7ajx7Do
 - RHEL 8 Boot Process https://www.youtube.com/watch?v=n-UDIZWlISA
-- 
-- 
-- ## General Topics ##
+ 
+ 
+ ## General Topics ##
 - How to Gain Real time experience https://www.youtube.com/watch?v=Y1GIvSsBrWk
 - New Dell Server RAID Configuration Demo https://www.youtube.com/watch?v=6_pGCZRk8KU
 - Explained Backup and Types of Backup https://www.youtube.com/watch?v=YiPFa5aJTFM
@@ -264,40 +276,39 @@
 - 8 Ways to Boost your Linux Administrator Work Tips https://www.youtube.com/watch?v=wbZMeqSBBp0
 - Types of Proxy Servers Explained https://www.youtube.com/watch?v=zRNPYjkKIk8
 - Transparent Proxy Explained in Detailed https://www.youtube.com/watch?v=4aEaKomTJL8
-- 
-- 
-- ## Linux Server patching Tutorial ##
+ 
+ 
+ ## Linux Server patching Tutorial ##
 - How to patch Linux servers https://www.youtube.com/watch?v=nKlbF7aSq7Y
 - What is patching https://www.youtube.com/watch?v=8QzOmAlUCMs
-- 
-- ## Tomcat Tutorial ##
+ 
+ ## Tomcat Tutorial ##
 - Tomcat 9 Multiple Instances in Single Linux Server https://www.youtube.com/watch?v=QSl_qJfb9QY
 - Tomcat 9 Port Number change Centos 8 https://www.youtube.com/watch?v=ig_rhUbk7gg
 - Tomcat 9 Installation Centos 8 Step by step Guide https://www.youtube.com/watch?v=rG4WhEZ6I8Y
-- 
-- ## High Availability Explained ##
+ 
+ ## High Availability Explained ##
 - Cluster/HA/High Availability Explained https://www.youtube.com/watch?v=N_mWJuc--AU
-- 
-- ## AWK Programming ## 
+ 
+ ## AWK Programming ## 
 - Introduction to AWK Programming with few examples https://www.youtube.com/watch?v=w37HdusJqeY
-- 
-- ## Amazon Web Services ##
+ 
+ ## Amazon Web Services ##
 - AWS SSH Server refused our key Solution https://www.youtube.com/watch?v=EBLuNEWWt_g
 - Mount S3 bucket in Linux https://www.youtube.com/watch?v=pvoKmH2GsQQ
 - AWS Snowball https://www.youtube.com/watch?v=DgbThQDeSLs
 - How to Setup AWS Free Tier Account https://www.youtube.com/watch?v=QUss8XVa8cc
 - How to Launch your first EC2 Instance in AWS https://www.youtube.com/watch?v=2_GXHygzWSQ
-- 
-- ## RAID ##
+ 
+ ## RAID ##
 - What is RAID Explained https://www.youtube.com/watch?v=9iKFxEXoCP4
 - Software RAID vs Hardware RAID https://www.youtube.com/watch?v=AoUbEDwcTps
 - RAID Level 5 Explained https://www.youtube.com/watch?v=Cs4i63gIvyU
-- 
-- ## Windows Server ##
+ 
+ ## Windows Server ##
 - Convert MBR partitions to GPT without data loss https://www.youtube.com/watch?v=pEdXfJ1rCB0
-- 
-- ## Hadoop Tutorial ##
+ 
+ ## Hadoop Tutorial ##
 - Installing and configuring Cloudera Hadoop https://www.youtube.com/watch?v=wnNreBH-xZI
 - big Data Environment setup https://www.youtube.com/watch?v=n56kx_Uuff4
 - Big Data Lab Setup https://www.youtube.com/watch?v=Rg3_orGl2cU
-- 
