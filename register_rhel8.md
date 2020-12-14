@@ -1,4 +1,5 @@
-```[root@RHEL8-3 ~]# yum repolist
+```
+[root@RHEL8-3 ~]# yum repolist
 Updating Subscription Management repositories.
 Unable to read consumer identity
 This system is not registered to Red Hat subscription Management. You can use subscription-manager to register.
