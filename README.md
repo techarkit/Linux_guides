@@ -7,7 +7,7 @@ A Red Hat Certified System Administrator (RHCSA) is able to perform the followin
 * [Facebook](https://www.facebook.com/Linuxarkit/)
 * [Email List](https://feedburner.google.com/fb/a/mailverify?uri=arkit)
 * [Linkedin](https://in.linkedin.com/in/ravi-kumar-94530121)
-* [Google Plus](https://plus.google.com/u/0/+RedhatEnterpriseLinuxStepbyStepGuide/posts)
+* [Reddit](https://www.reddit.com/r/techtutorial/)
 * [Twitter](https://twitter.com/aravikumar48)
 * [Youtube](https://www.youtube.com/Techarkit?sub_confirmation=1)
 * [Email Address](aravikumar48@gmail.com)
@@ -21,6 +21,16 @@ A Red Hat Certified System Administrator (RHCSA) is able to perform the followin
 - Deploy, configure, and maintain systems, including software installation, update, and core services
 - Manage users and groups, including use of a centralized directory for authentication
 - Manage security, including basic firewall and SELinux configuration
+
+** Red Hat Enterprise Linux 8 Tutorial **
+
+- [RHEL 8 Video PlayList](https://www.youtube.com/watch?v=AdSnscHC3YA&list=PL8cE5Nxf6M6Z0MhnxDU8o_k-6xCSM8Kmi)
+- [RHEL 8 Course Curriculum](https://www.youtube.com/watch?v=AdSnscHC3YA)
+- [Introduction to Linux](https://www.youtube.com/watch?v=fWHe5W5Br4Q)
+- [Linux Directory Structure](https://www.youtube.com/watch?v=DPpzSZwqJnA)
+- [Download RHEL 8 ISO](https://www.youtube.com/watch?v=s_xZfMfqulY)
+- [How to Install Os on a remote server](https://www.youtube.com/watch?v=nzl19AlllYA)
+- [Register RHEL 8 and update packages](https://www.youtube.com/watch?v=0pmeBZoVW5s)
 
 - [RHCSA Certification Course Overview](https://www.youtube.com/watch?v=BskRmjvWG5Y)
 - [Setup Linux Lab using your Desktop](https://www.youtube.com/watch?v=2DKrI3CWfbE)
