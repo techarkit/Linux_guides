@@ -22,7 +22,7 @@ A Red Hat Certified System Administrator (RHCSA) is able to perform the followin
 - Manage users and groups, including use of a centralized directory for authentication
 - Manage security, including basic firewall and SELinux configuration
 
-** Red Hat Enterprise Linux 8 Tutorial **
+**Red Hat Enterprise Linux 8 Tutorial**
 
 - [RHEL 8 Video PlayList](https://www.youtube.com/watch?v=AdSnscHC3YA&list=PL8cE5Nxf6M6Z0MhnxDU8o_k-6xCSM8Kmi)
 - [RHEL 8 Course Curriculum](https://www.youtube.com/watch?v=AdSnscHC3YA)
@@ -32,6 +32,7 @@ A Red Hat Certified System Administrator (RHCSA) is able to perform the followin
 - [How to Install Os on a remote server](https://www.youtube.com/watch?v=nzl19AlllYA)
 - [Register RHEL 8 and update packages](https://www.youtube.com/watch?v=0pmeBZoVW5s)
 
+**RHCSA**
 - [RHCSA Certification Course Overview](https://www.youtube.com/watch?v=BskRmjvWG5Y)
 - [Setup Linux Lab using your Desktop](https://www.youtube.com/watch?v=2DKrI3CWfbE)
 - [Introduction to Linux Operating System](https://www.youtube.com/watch?v=Wv5VHr4esvs)
