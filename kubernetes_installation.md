@@ -132,3 +132,104 @@ OR
 
 sudo kubectl apply -f https://raw.githubusercontent.com/techarkit/Linux_guides/master/kube-flannel.yml
 ```	
+
+# Adding KubeNode (Worker Node to Cluster)
+
+### Disable SELinux and Update packages
+```
+sed -i 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/selinux/config
+setenforce 0
+yum update -y
+reboot
+```
+### Add Host Entries for local resolution
+```
+vi /etc/hosts
+192.168.175.200 kubemaster.techarkit.local kubemaster
+192.168.175.201 kubenode1.techarkit.local kubenode1
+192.168.175.202 kubenode2.techarkit.local kubenode2
+:wq
+```
+
+### After Reboot check SELinux Status
+```
+sestatus
+SELinux status:                 disabled
+```
+
+### Add Firewall Rules 
+```
+firewall-cmd --permanent --add-port=6783/tcp
+firewall-cmd --permanent --add-port=10250/tcp
+firewall-cmd --permanent --add-port=10255/tcp
+firewall-cmd --permanent --add-port=30000-32767/tcp
+firewall-cmd --reload
+echo '1' > /proc/sys/net/bridge/bridge-nf-call-iptables
+```
+
+## Add Kubernetes Repository to Install Kubeadm packages
+```
+vi /etc/yum.repos.d/kubernetes.repo
+[kubernetes]
+name=Kubernetes
+baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+enabled=1
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+
+:wq
+```
+### Add Docker Repository to Install container run-time
+```
+yum install yum-utils -y
+yum-config-manager     --add-repo     https://download.docker.com/linux/centos/docker-ce.repo
+
+yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin git wget -y
+yum install kubeadm -y
+
+systemctl enable docker && systemctl start docker
+systemctl enable kubelet && systemctl start kubelet
+```
+
+### Join Node to Kubernetes Cluster 
+```
+kubeadm join 192.168.175.200:6443 --token vaki2g.wevj9qs1d6unyj0k         --discovery-token-ca-cert-hash sha256:68c74acbbcea624e2cdbeee4acc1a3feb96f58a53b643476b9f77769e340b98b
+```
+
+### If you get below error like Kubelet is not running
+```
+systemctl status kubelet -l
+
+---------------------------- Error ------------------------------------
+		 Loaded: loaded (/usr/lib/systemd/system/kubelet.service; enabled; vendor preset: disabled)
+  Drop-In: /usr/lib/systemd/system/kubelet.service.d
+           └─10-kubeadm.conf
+   Active: activating (auto-restart) (Result: exit-code) since Sun 2023-01-01 21:23:01 IST; 3s ago
+     Docs: https://kubernetes.io/docs/
+  Process: 9815 ExecStart=/usr/bin/kubelet $KUBELET_KUBECONFIG_ARGS $KUBELET_CONFIG_ARGS $KUBELET_KUBEADM_ARGS $KUBELET_EXTRA_ARGS (code=exited, status=1/FAILURE)
+ Main PID: 9815 (code=exited, status=1/FAILURE)
+
+Jan 01 21:23:01 kubenode1.techarkit.local systemd[1]: Unit kubelet.service entered failed state.
+---------------------------- Error ------------------------------------
+
+mv /etc/kubernetes/kubelet.conf /etc/kubernetes/admin.conf
+```
+
+### Set Variables and Re-run the Node Join command
+```
+mkdir -p $HOME/.kube
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+systemctl restart kubelet
+
+kubeadm join 192.168.175.200:6443 --token vaki2g.wevj9qs1d6unyj0k         --discovery-token-ca-cert-hash sha256:68c74acbbcea624e2cdbeee4acc1a3feb96f58a53b643476b9f77769e340b98b
+```
+
+### If you get ca.crt alreay exists error then delete the file
+```
+mv /etc/kubernetes/pki/ca.crt /tmp/
+```
+
+Re-run the Node Join Command
