@@ -4,7 +4,27 @@ I am using this Centos ISO image for the Kube Node and worker Nodes
 
 [Download Centos 7 ISO](http://repo.extreme-ix.org/centos/7.9.2009/isos/x86_64/CentOS-7-x86_64-Minimal-2009.iso)
 
-### First Step to Add Firewall rules if your firewalld is running (You can skip if not running)
+## Hardware Requirement
+- Kubernet Master required 
+-     Atleast 2 CPU Cores
+-     4GB RAM 
+-     20GB HDD (Minimum)
+- Kube Nodes Required 
+-     Atleast 2 CPU Cores
+-     4GB RAM
+-     40GB HDD (Minimum)
+
+### Update OS packges and Security patches run this steps in all the nodes
+
+```
+yum update -y
+
+sed -i 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/selinux/config
+setenforce 0
+reboot
+```
+
+### Add Firewall rules if your firewalld is running (You can skip if not running)
 ```
 firewall-cmd --permanent --add-port=6443/tcp
 firewall-cmd --permanent --add-port=2379-2380/tcp
@@ -50,21 +70,6 @@ sudo yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin git
 sudo systemctl enable docker && sudo systemctl start docker
 sudo systemctl enable containerd && sudo systemctl start containerd
 
-
-sudo systemctl restart containerd
-```	
-
-### You can skip if Containerd started successfully
-```	
-[preflight] Running pre-flight checks
-        [WARNING Hostname]: hostname "kubemaster.techarkit.local" could not be reached
-        [WARNING Hostname]: hostname "kubemaster.techarkit.local": lookup kubemaster.techarkit.local on 192.168.175.2:53: no such host
-error execution phase preflight: [preflight] Some fatal errors occurred:
-        [ERROR CRI]: container runtime is not running: output: E1211 20:58:19.685923  104550 remote_runtime.go:948] "Status from runtime service failed" err="rpc error: code = Unimplemented desc = unknown service runtime.v1alpha2.RuntimeService"
-        
-[root@kubemaster ~]#  rm /etc/containerd/config.toml
-rm: cannot remove ‘/etc/containerd/config.toml’: No such file or directory
-[root@kubemaster ~]# systemctl restart containerd
 ```	
 
 ### Create YUM repository to install required packages
@@ -87,7 +92,22 @@ yum install kubeadm docker -y
 systemctl enable kubelet && systemctl start kubelet
 
 kubeadm init
+```	
 
+### If you get below error delete the config.toml file and restart containerd service
+```
+[preflight] Running pre-flight checks
+        [WARNING Hostname]: hostname "kubemaster.techarkit.local" could not be reached
+        [WARNING Hostname]: hostname "kubemaster.techarkit.local": lookup kubemaster.techarkit.local on 192.168.175.2:53: no such host
+error execution phase preflight: [preflight] Some fatal errors occurred:
+        [ERROR CRI]: container runtime is not running: output: E1211 20:58:19.685923  104550 remote_runtime.go:948] "Status from runtime service failed" err="rpc error: code = Unimplemented desc = unknown service runtime.v1alpha2.RuntimeService"
+        
+[root@kubemaster ~]#  rm /etc/containerd/config.toml
+rm: cannot remove ‘/etc/containerd/config.toml’: No such file or directory
+[root@kubemaster ~]# systemctl restart containerd
+```	
+
+```
 mkdir -p $HOME/.kube
 cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 chown $(id -u):$(id -g) $HOME/.kube/config
