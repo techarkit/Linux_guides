@@ -46,13 +46,13 @@ sudo yum-config-manager \
     --add-repo \
     https://download.docker.com/linux/centos/docker-ce.repo
 
-sudo yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin
-systemctl enable docker && systemctl start docker
+sudo yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin git wget -y
+sudo systemctl enable docker && sudo systemctl start docker
+sudo systemctl enable containerd && sudo systemctl start containerd
 
-sudo rm /etc/containerd/config.toml
+
 sudo systemctl restart containerd
 ```	
-
 
 ### You can skip if Containerd started successfully
 ```	
@@ -85,7 +85,16 @@ gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cl
 yum install kubeadm docker -y 
 
 systemctl enable kubelet && systemctl start kubelet
-```	
+
+kubeadm init
+
+mkdir -p $HOME/.kube
+cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+chown $(id -u):$(id -g) $HOME/.kube/config
+export KUBECONFIG=/etc/kubernetes/admin.conf
+
+kubectl get nodes --all-namespaces
+```
 
 ### Example Command 
 ```	
@@ -95,5 +104,11 @@ kubeadm join 192.168.117.200:6443 --token 869h67.4x0irxa14419ep1s \
 
 ### Add Kube Flannel to create Networking between all the Nodes
 ```	
+git clone https://github.com/techarkit/Linux_guides.git
+cd Linux_guides/
+sudo kubectl apply -f /root/Linux_guides/kube-flannel.yml
+
+OR
+
 sudo kubectl apply -f https://raw.githubusercontent.com/techarkit/Linux_guides/master/kube-flannel.yml
 ```	
