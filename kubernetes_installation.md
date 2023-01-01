@@ -46,6 +46,12 @@ sudo systemctl restart containerd
 
 ### You can skip if Containerd started successfully
 ```	
+[preflight] Running pre-flight checks
+        [WARNING Hostname]: hostname "kubemaster.techarkit.local" could not be reached
+        [WARNING Hostname]: hostname "kubemaster.techarkit.local": lookup kubemaster.techarkit.local on 192.168.175.2:53: no such host
+error execution phase preflight: [preflight] Some fatal errors occurred:
+        [ERROR CRI]: container runtime is not running: output: E1211 20:58:19.685923  104550 remote_runtime.go:948] "Status from runtime service failed" err="rpc error: code = Unimplemented desc = unknown service runtime.v1alpha2.RuntimeService"
+        
 [root@kubemaster ~]#  rm /etc/containerd/config.toml
 rm: cannot remove ‘/etc/containerd/config.toml’: No such file or directory
 [root@kubemaster ~]# systemctl restart containerd
