@@ -1,5 +1,9 @@
 ## How to install Kubernetes Cluster in Centos 7 Step by Step Guide
 
+I am using this Centos ISO image for the Kube Node and worker Nodes
+
+[Download Centos 7 ISO](http://repo.extreme-ix.org/centos/7.9.2009/isos/x86_64/CentOS-7-x86_64-Minimal-2009.iso)
+
 ### First Step to Add Firewall rules if your firewalld is running (You can skip if not running)
 ```
 firewall-cmd --permanent --add-port=6443/tcp
