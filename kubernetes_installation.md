@@ -17,6 +17,16 @@ modprobe br_netfilter
 echo '1' > /proc/sys/net/bridge/bridge-nf-call-iptables
 ```
 
+### Update iptable Settings
+```
+cat <<EOF > /etc/sysctl.d/k8s.conf
+net.bridge.bridge-nf-call-ip6tables = 1
+net.bridge.bridge-nf-call-iptables = 1
+EOF
+
+sysctl --system
+```
+
 ### Remove Older Docker if already installed
 ```
 sudo yum remove docker \
