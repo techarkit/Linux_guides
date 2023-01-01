@@ -6,13 +6,13 @@ I am using this Centos ISO image for the Kube Node and worker Nodes
 
 ## Hardware Requirement
 - Kubernet Master required 
--     Atleast 2 CPU Cores
--     4GB RAM 
--     20GB HDD (Minimum)
+Atleast 2 CPU Cores
+4GB RAM 
+20GB HDD (Minimum)
 - Kube Nodes Required 
--     Atleast 2 CPU Cores
--     4GB RAM
--     40GB HDD (Minimum)
+Atleast 2 CPU Cores
+4GB RAM
+40GB HDD (Minimum)
 
 ### Update OS packges and Security patches run this steps in all the nodes
 
