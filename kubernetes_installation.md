@@ -5,14 +5,14 @@ I am using this Centos ISO image for the Kube Node and worker Nodes
 [Download Centos 7 ISO](http://repo.extreme-ix.org/centos/7.9.2009/isos/x86_64/CentOS-7-x86_64-Minimal-2009.iso)
 
 ## Hardware Requirement
-- Kubernet Master required 
-Atleast 2 CPU Cores
-4GB RAM 
-20GB HDD (Minimum)
-- Kube Nodes Required 
-Atleast 2 CPU Cores
-4GB RAM
-40GB HDD (Minimum)
+### Kubernet Master required ###
+- Atleast 2 CPU Cores
+- 4GB RAM 
+- 20GB HDD (Minimum)
+### Kube Nodes Required ###
+- Atleast 2 CPU Cores
+- 4GB RAM
+- 40GB HDD (Minimum)
 
 ### Update OS packges and Security patches run this steps in all the nodes
 
