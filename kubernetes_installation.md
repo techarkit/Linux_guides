@@ -133,6 +133,13 @@ OR
 sudo kubectl apply -f https://raw.githubusercontent.com/techarkit/Linux_guides/master/kube-flannel.yml
 ```	
 
+```
+# kubectl get nodes
+NAME                         STATUS   ROLES           AGE    VERSION
+kubemaster.techarkit.local   Ready    control-plane   153m   v1.26.0
+kubenode1.techarkit.local    Ready    <none>          25m    v1.26.0
+```
+
 # Adding KubeNode (Worker Node to Cluster)
 
 ### Disable SELinux and Update packages
