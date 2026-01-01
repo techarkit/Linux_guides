@@ -1,0 +1,173 @@
+[epel-modular]
+name=Extra Packages for Enterprise Linux Modular $releasever - $basearch
+# It is much more secure to use the metalink, but if you wish to use a local mirror
+# place its address here.
+#baseurl=https://download.example/pub/epel/$releasever/Modular/$basearch
+metalink=https://mirrors.fedoraproject.org/metalink?repo=epel-modular-$releasever&arch=$basearch&infra=$infra&content=$contentdir
+enabled=1
+gpgcheck=0
+countme=1
+
+
+[epel-modular-debuginfo]
+name=Extra Packages for Enterprise Linux Modular $releasever - $basearch - Debug
+# It is much more secure to use the metalink, but if you wish to use a local mirror
+# place its address here.
+#baseurl=https://download.example/pub/epel/$releasever/Modular/$basearch/debug
+metalink=https://mirrors.fedoraproject.org/metalink?repo=epel-modular-debug-$releasever&arch=$basearch&infra=$infra&content=$contentdir
+enabled=0
+gpgcheck=0
+
+[epel-modular-source]
+name=Extra Packages for Enterprise Linux Modular $releasever - $basearch - Source
+# It is much more secure to use the metalink, but if you wish to use a local mirror
+# place it's address here.
+#baseurl=https://download.example/pub/epel/$releasever/Modular/source/tree/
+metalink=https://mirrors.fedoraproject.org/metalink?repo=epel-modular-source-$releasever&arch=$basearch&infra=$infra&content=$contentdir
+enabled=0
+
+gpgcheck=0
+[epel-playground]
+name=Extra Packages for Enterprise Linux $releasever - Playground - $basearch
+# It is much more secure to use the metalink, but if you wish to use a local mirror
+# place its address here.
+#baseurl=https://download.example/pub/epel/playground/$releasever/Everything/$basearch/os
+metalink=https://mirrors.fedoraproject.org/metalink?repo=playground-epel$releasever&arch=$basearch&infra=$infra&content=$contentdir
+enabled=0
+gpgcheck=0
+countme=1
+
+
+[epel-playground-debuginfo]
+name=Extra Packages for Enterprise Linux $releasever - Playground - $basearch - Debug
+# It is much more secure to use the metalink, but if you wish to use a local mirror
+# place its address here.
+#baseurl=https://download.example/pub/epel/playground/$releasever/Everything/$basearch/debug/tree
+metalink=https://mirrors.fedoraproject.org/metalink?repo=playground-debug-epel$releasever&arch=$basearch&infra=$infra&content=$contentdir
+enabled=0
+gpgcheck=0
+
+[epel-playground-source]
+name=Extra Packages for Enterprise Linux $releasever - Playground - $basearch - Source
+# It is much more secure to use the metalink, but if you wish to use a local mirror
+# place its address here.
+#baseurl=https://download.example/pub/epel/playground/$releasever/Everything/source/tree/
+metalink=https://mirrors.fedoraproject.org/metalink?repo=playground-source-epel$releasever&arch=$basearch&infra=$infra&content=$contentdir
+enabled=0
+gpgcheck=0
+
+
+[epel]
+name=Extra Packages for Enterprise Linux $releasever - $basearch
+# It is much more secure to use the metalink, but if you wish to use a local mirror
+# place its address here.
+#baseurl=https://download.example/pub/epel/$releasever/Everything/$basearch
+metalink=https://mirrors.fedoraproject.org/metalink?repo=epel-$releasever&arch=$basearch&infra=$infra&content=$contentdir
+enabled=1
+gpgcheck=0
+countme=1
+
+
+[epel-debuginfo]
+name=Extra Packages for Enterprise Linux $releasever - $basearch - Debug
+# It is much more secure to use the metalink, but if you wish to use a local mirror
+# place its address here.
+#baseurl=https://download.example/pub/epel/$releasever/Everything/$basearch/debug
+metalink=https://mirrors.fedoraproject.org/metalink?repo=epel-debug-$releasever&arch=$basearch&infra=$infra&content=$contentdir
+enabled=0
+gpgcheck=0
+
+[epel-source]
+name=Extra Packages for Enterprise Linux $releasever - $basearch - Source
+# It is much more secure to use the metalink, but if you wish to use a local mirror
+# place it's address here.
+#baseurl=https://download.example/pub/epel/$releasever/Everything/source/tree/
+metalink=https://mirrors.fedoraproject.org/metalink?repo=epel-source-$releasever&arch=$basearch&infra=$infra&content=$contentdir
+enabled=0
+gpgcheck=0
+
+[epel-testing-modular]
+name=Extra Packages for Enterprise Linux Modular $releasever - Testing - $basearch
+# It is much more secure to use the metalink, but if you wish to use a local mirror
+# place its address here.
+#baseurl=https://download.example/pub/epel/testing/$releasever/Modular/$basearch
+metalink=https://mirrors.fedoraproject.org/metalink?repo=testing-modular-epel$releasever&arch=$basearch&infra=$infra&content=$contentdir
+enabled=0
+gpgcheck=0
+countme=1
+
+
+[epel-testing-modular-debuginfo]
+name=Extra Packages for Enterprise Linux Modular $releasever - Testing - $basearch - Debug
+# It is much more secure to use the metalink, but if you wish to use a local mirror
+# place its address here.
+#baseurl=https://download.example/pub/epel/testing/$releasever/Modular/$basearch/debug
+metalink=https://mirrors.fedoraproject.org/metalink?repo=testing-modular-debug-epel$releasever&arch=$basearch&infra=$infra&content=$contentdir
+enabled=0
+gpgcheck=0
+
+[epel-testing-modular-source]
+name=Extra Packages for Enterprise Linux Modular $releasever - Testing - $basearch - Source
+# It is much more secure to use the metalink, but if you wish to use a local mirror
+# place it's address here.
+#baseurl=https://download.example/pub/epel/testing/$releasever/Modular/source/tree/
+metalink=https://mirrors.fedoraproject.org/metalink?repo=testing-modular-source-epel$releasever&arch=$basearch&infra=$infra&content=$contentdir
+enabled=0
+
+gpgcheck=0
+[epel-testing]
+name=Extra Packages for Enterprise Linux $releasever - Testing - $basearch
+# It is much more secure to use the metalink, but if you wish to use a local mirror
+# place its address here.
+#baseurl=https://download.example/pub/epel/testing/$releasever/Everything/$basearch
+metalink=https://mirrors.fedoraproject.org/metalink?repo=testing-epel$releasever&arch=$basearch&infra=$infra&content=$contentdir
+enabled=0
+gpgcheck=0
+countme=1
+
+
+[epel-testing-debuginfo]
+name=Extra Packages for Enterprise Linux $releasever - Testing - $basearch - Debug
+# It is much more secure to use the metalink, but if you wish to use a local mirror
+# place its address here.
+#baseurl=https://download.example/pub/epel/testing/$releasever/Everything/$basearch/debug
+metalink=https://mirrors.fedoraproject.org/metalink?repo=testing-debug-epel$releasever&arch=$basearch&infra=$infra&content=$contentdir
+enabled=0
+gpgcheck=0
+
+[epel-testing-source]
+name=Extra Packages for Enterprise Linux $releasever - Testing - $basearch - Source
+# It is much more secure to use the metalink, but if you wish to use a local mirror
+# place it's address here.
+#baseurl=https://download.example/pub/epel/testing/$releasever/Everything/source/tree/
+metalink=https://mirrors.fedoraproject.org/metalink?repo=testing-source-epel$releasever&arch=$basearch&infra=$infra&content=$contentdir
+enabled=0
+gpgcheck=0
+
+#####################
+# Coherent Standard #
+#####################
+
+[ol8_BaseOs_Latest]
+name=Oracle Linux $releasever BaseOS Latest ($basearch)
+baseurl=https:///yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64
+gpgcheck=0
+enabled=1
+
+[ol8_AppStream]
+name=Oracle Linux $releasever AppStream ($basearch)
+baseurl=https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64
+gpgcheck=0
+enabled=1
+
+[ol8_addons]
+name=Oracle Linux $releasever addons ($basearch)
+baseurl=https://yum.oracle.com/repo/OracleLinux/OL8/addons/x86_64
+gpgcheck=0
+enabled=1
+
+[ol8_UEKR7]
+name=Oracle Linux $releasever UEKR7 ($basearch)
+baseurl=https://yum.oracle.com/repo/OracleLinux/OL8/UEKR7/x86_64
+gpgcheck=0
+enabled=1
