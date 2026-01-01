@@ -144,10 +144,6 @@ metalink=https://mirrors.fedoraproject.org/metalink?repo=testing-source-epel$rel
 enabled=0
 gpgcheck=0
 
-#####################
-# Coherent Standard #
-#####################
-
 [ol8_BaseOs_Latest]
 name=Oracle Linux $releasever BaseOS Latest ($basearch)
 baseurl=https:///yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64
