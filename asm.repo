@@ -1,4 +1,3 @@
-https://636606082254.signin.aws.amazon.com/console
 [epel-modular]
 name=Extra Packages for Enterprise Linux Modular $releasever - $basearch
 # It is much more secure to use the metalink, but if you wish to use a local mirror
